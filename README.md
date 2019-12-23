@@ -67,7 +67,7 @@ latexmk example-singlefile.tex
 命令即可自动调用相关程序进行编译，处理各种文件依赖并自动预览。
 执行`latexmk -c`命令清理所有缓存文件。
 
-编译多文件结构的文档将文件名替换成`example-multifile.tex.tex`即可。
+编译多文件结构的文档将文件名替换成`example-multifile.tex`即可。
 使用TeXstudio、Texmaker或WinEdt等编辑环境请将编译引擎设置成latexmk，
 如果在Windows平台下使用MiKTeX还需要安装
 [Perl语言解释器](http://strawberryperl.com/)。
@@ -240,14 +240,14 @@ xelatex example-singlefile.tex
 模板提供的样例（`example-singlefile.tex`）将所有内容写在同一个文档里，
 使用者认为必要可以将各个章节写在不同的子文件内，使用`\input`命令统一包含。
 
-模版提供另一个多文件的范例（`example-multifile.tex.tex`），
+模版提供另一个多文件的范例（`example-multifile.tex`），
 执行相应的命令即可自动编译：
 ```bash
-latexmk example-multifile.tex.tex
+latexmk example-multifile.tex
 ```
 其中每个文件对应独立的章
 （参见`chapter/template.tex`）、摘要、致谢等（见`misc/`）。
-分割的文件使用`\input`命令包含到主文档内（参见`example-multifile.tex.tex`）。
+分割的文件使用`\input`命令包含到主文档内（参见`example-multifile.tex`）。
 所有需要使用的宏包在主文件中导入，编译方法保持不变。
 
 ### 图表目录和缩略词
