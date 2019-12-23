@@ -2,7 +2,7 @@
 %  Copyright 2016-2019 Xianghua Gan <ganx@swufe.edu.cn>
 %
 %  This work is based on github.com/x-magus/ThesisUESTC, and thus inherits
-%  the license of it.
+%  the license of it. All the original credit should go directly to Wen Wang.
 %  This work may be distributed and/or modified under the
 %  conditions of the LaTeX Project Public License, either version 1.3
 %  of this license or (at your option) any later version.
