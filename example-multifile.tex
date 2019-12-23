@@ -1,0 +1,57 @@
+
+\documentclass[master]{thesis-swufe}
+
+\title{论文标题}
+\author{学生姓名}
+\advisor{教师姓名}
+\school{学院}
+\major{专业}
+\studentnumber{666666}
+
+% require all the usepackages here
+% \usepackage{algorithm2e}
+
+\begin{document}
+
+\makecover
+
+% This is a template of mutiple files.
+% The folders chapters/ and misc/ have the related files
+
+% abstract
+\input{misc/chinese_abstract}
+\input{misc/english_abstract}
+
+% table of contents
+\thesistableofcontents
+
+% thesis contents
+\input{chapter/c1_exordium}
+\input{chapter/c2}
+\input{chapter/c3}
+\input{chapter/c4}
+\input{chapter/c5}
+%\input{chapter/template}
+
+% misc
+\input{misc/acknowledgement}
+
+\nocite{*}
+\thesisloadbibliography{reference}
+
+%
+% Uncomment the following code to load bibliography database with native
+% \bibliography command.
+%
+% \nocite{*}
+% \bibliographystyle{thesis-swufe}
+% \bibliography{reference}
+%
+
+% comment while no need
+\input{misc/appendix}
+\thesisloadaccomplish{publications}
+\input{misc/translate_original}
+\input{misc/translate_chinese}
+
+\end{document}
