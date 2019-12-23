@@ -1,6 +1,8 @@
 %
 %  Copyright 2016-2019 Xianghua Gan <ganx@swufe.edu.cn>
 % 
+%  This work is based on github.com/x-magus/ThesisUESTC, and thus inherits
+%  the license of it.
 %  This work may be distributed and/or modified under the
 %  conditions of the LaTeX Project Public License, either version 1.3
 %  of this license or (at your option) any later version.
@@ -10,9 +12,7 @@
 %  version 2005/12/01 or later.
 % 
 %  This work has the LPPL maintenance status `maintained'.
-% 
 %  The Current Maintainer of this work is Xianghua Gan <ganx@swufe.edu.cn>.
-% 
 %  This work consists of the files thesis-swufe.cls, thesis-swufe.bst.
 % 
 
