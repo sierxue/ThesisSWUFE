@@ -119,7 +119,7 @@
 }
 
 \RequirePackage[a4paper,
-  inner=3cm, outer=3cm, top=3cm, bottom=3cm,
+  inner=3.45cm, outer=3.45cm, top=3.9cm, bottom=3.4cm,
   bindingoffset=0cm]{geometry}
 
 \setlength{\headheight}{15pt}
