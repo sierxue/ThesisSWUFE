@@ -53,16 +53,11 @@
   \newfontfamily{\heiti@letter}{STHeiti}
   \setallmainfonts{Times New Roman}
 \else
-  \setCJKmainfont[Path = fonts/, AutoFakeBold=true]{simsun.ttc}
-  \setCJKsansfont[Path = fonts/]{simhei.ttf}
-  \newCJKfontfamily[hei]\heiti{simhei.ttf}[Path = fonts/]
-  \newfontfamily{\heiti@letter}{simhei.ttf}[Path = fonts/]
-  \setallmainfonts[
-    Path = fonts/,
-    BoldFont=timesbd.ttf,
-    ItalicFont=timesi.ttf,
-    BoldItalicFont=timesbi.ttf,
-  ]{times.ttf}
+  \setCJKmainfont[AutoFakeBold=true]{SimSun}
+  \setCJKsansfont[]{SimHei}
+  \newCJKfontfamily[hei]\heiti{SimHei}
+  \newfontfamily{\heiti@letter}{SimHei}
+  \setallmainfonts{Times New Roman}
 \fi
 \fi
 
