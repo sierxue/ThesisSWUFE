@@ -55,6 +55,7 @@
 \else
   \setCJKmainfont[AutoFakeBold=true]{SimSun}
   \setCJKsansfont{SimHei}
+  \setCJKmonofont[AutoFakeBold=true]{STZhongsong}
   \newCJKfontfamily\heiti{SimHei}
   \newfontfamily{\heiti@letter}{SimHei}
   \setallmainfonts{Times New Roman}
