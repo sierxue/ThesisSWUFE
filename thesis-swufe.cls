@@ -699,6 +699,10 @@ UDC\textsuperscript{ 注1} \uline{\hspace{2.5in}} \\[12bp]
   \fancyfoot[CE,CO]{\fontsize{9pt}{10.8pt}\selectfont\thepage}
 }
 
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\bf\ttfamily}
+\renewcommand{\cftsecfont}{\normalfont\ttfamily}
+
 \pretocmd{\tableofcontents}{
   \fancyhf{}
   \ifchinesebook{
@@ -801,9 +805,9 @@ UDC\textsuperscript{ 注1} \uline{\hspace{2.5in}} \\[12bp]
   } {
     \renewcommand{\appendixname}{Appendix}
   }
-  
+
   \renewcommand{\thesection}{A.\arabic{section}}
-  
+
   \renewcommand{\theequation}{a-\arabic{equation}}
   \renewcommand{\thetable}{a-\arabic{table}}
   \renewcommand{\thefigure}{a-\arabic{figure}}
@@ -813,7 +817,7 @@ UDC\textsuperscript{ 注1} \uline{\hspace{2.5in}} \\[12bp]
   \renewcommand{\thelemma}{a.\arabic{lemma}}
   \renewcommand{\thedefinition}{a.\arabic{definition}}
   \renewcommand{\theexample}{a.\arabic{example}}
-  
+
   \ifchinesebook{
     \chapter*{附\hspace{12pt}录}
     \addcontentsline{toc}{chapter}{附录}
@@ -841,7 +845,7 @@ UDC\textsuperscript{ 注1} \uline{\hspace{2.5in}} \\[12bp]
     \addcontentsline{toc}{chapter}{\translation@originaltitle}
     \markboth{\translation@originaltitle}{\translation@originaltitle}
     \thispagestyle{fancy}
-    \hypersetup{bookmarksdepth=0} 
+    \hypersetup{bookmarksdepth=0}
     \renewcommand{\theequation}{\arabic{equation}}
     \renewcommand{\thetable}{\arabic{table}}
     \renewcommand{\thefigure}{\arabic{figure}}
@@ -857,7 +861,7 @@ UDC\textsuperscript{ 注1} \uline{\hspace{2.5in}} \\[12bp]
     \addcontentsline{toc}{chapter}{\translation@chinesetitle}
     \markboth{\translation@chinesetitle}{\translation@chinesetitle}
     \thispagestyle{fancy}
-    \hypersetup{bookmarksdepth=0} 
+    \hypersetup{bookmarksdepth=0}
     \renewcommand{\theequation}{\arabic{equation}}
     \renewcommand{\thetable}{\arabic{table}}
     \renewcommand{\thefigure}{\arabic{figure}}
