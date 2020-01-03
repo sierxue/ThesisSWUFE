@@ -54,8 +54,8 @@
   \setallmainfonts{Times New Roman}
 \else
   \setCJKmainfont[AutoFakeBold=true]{SimSun}
-  \setCJKsansfont[]{SimHei}
-  \newCJKfontfamily[hei]\heiti{SimHei}
+  \setCJKsansfont{SimHei}
+  \newCJKfontfamily\heiti{SimHei}
   \newfontfamily{\heiti@letter}{SimHei}
   \setallmainfonts{Times New Roman}
 \fi
@@ -469,7 +469,7 @@
   \fancyhf{}
   \fancyhead[C]{\fontsize{10.5pt}{12.6pt}\selectfont\listtablename}
   \fancyfoot[CE,CO]{\fontsize{9pt}{10.8pt}\selectfont\Roman{pseudopage}}
-  
+
   \ifchinesebook{
     \addtolength{\cfttabnumwidth}{12pt}
     \renewcommand{\cfttabpresnum}{\figurename}
