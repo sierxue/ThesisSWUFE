@@ -438,7 +438,7 @@
 \ProcessOptions\relax
 
 \ifchinesebook{
-  \renewcommand{\contentsname}{目\hspace{6pt}录}
+  \renewcommand{\contentsname}{\bf\ttfamily{目\hspace{6pt}录}}
   \renewcommand{\bibname}{参考文献}
   \renewcommand{\figurename}{图}
   \renewcommand{\tablename}{表}
