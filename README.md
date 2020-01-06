@@ -4,12 +4,12 @@
 [![](https://img.shields.io/github/issues/sierxue/ThesisSWUFE)](https://github.com/sierxue/ThesisSWUFE/issues)
 ![Repo Size](https://img.shields.io/github/repo-size/sierxue/ThesisSWUFE.svg)
 
-此项目提供用于排版西南财经大学毕业论文的LaTeX模板类，
+此项目提供用于排版西南财经大学毕业论文的 LaTeX 模板类，
 旨在帮助西南财经大学的毕业生高效地完成毕业论文的写作。
 模板提供各种方便的命令，自动化地排版论文的各个部分，
 使毕业论文轻易地满足学校的格式要求。
-为了支持更好的字体效果，模板基于XeLaTeX编写，
-并且放弃对CTeX的依赖，使模板更加稳定。
+为了支持更好的字体效果，模板基于 XeLaTeX 编写，
+并且放弃对 CTeX 的依赖，使模板更加稳定。
 
 本项目建立在王稳同学的[模板](https://github.com/x-magus/ThesisUESTC)上，
 在此鸣谢王稳同学！
@@ -35,32 +35,32 @@
 首选: [github 下载](https://github.com/sierxue/ThesisSWUFE/zipball/master).
 如果下载速度慢的话，可以用 [腾讯下载](https://dev.tencent.com/u/ganx/p/ThesisSWUFE/git/archive/master).
 ### 基本环境
-使用模板需要系统安装任意一种TeX环境，
+使用模板需要系统安装任意一种 TeX 环境，
 如[TeXLive](http://mirror.ctan.org/systems/texlive/Images/)、
 [MacTeX](https://www.tug.org/mactex/mactex-download.html)
 和[MiKTeX](https://miktex.org/download)
-（都自动带有XeLaTeX引擎，但是不推荐CTeX），
-安装有SimSun和SimHei字体（其实就是宋体和黑体）以及Times New Roman英文字体。
-在MacOS下编译会自动识别操作系统，使用Songti SC和STHeiti字体，
+（都自动带有 XeLaTeX 引擎，但是不推荐 CTeX），
+安装有 SimSun 和 SimHei 字体（其实就是宋体和黑体）以及 Times New Roman 英文字体。
+在 MacOS 下编译会自动识别操作系统，使用 Songti SC 和 STHeiti 字体，
 但需要启用`--shell-escape`编译选项。
 在 Linux  系统上，因为所需的字体文件已经放在目录 fonts/ 里了,
 即使不安装字体或者安装字体不成功的话，也可以使用。
 **注意**: 此功能只在 Ubuntu + texlive 2019 系统上测试过。
 
-模板采用LaTeX类的形式封装，
-导入模板只需要把thesis-swufe.cls文件放在文档所在目录，
+模板采用 LaTeX 类的形式封装，
+导入模板只需要把 thesis-swufe.cls 文件放在文档所在目录，
 在文档开头使用`\documentclass{thesis-swufe}`命令
-将文档的类设置成thesis-swufe即可。
-使用BibTeX录入参考文献还需要`thesis-swufe.bst`风格定义文件。
+将文档的类设置成 thesis-swufe 即可。
+使用 BibTeX 录入参考文献还需要`thesis-swufe.bst`风格定义文件。
 
-模板类有bachelor、master、promaster、doctor和engdoctor四个学位选项，
+模板类有 bachelor、master、promaster、doctor 和 engdoctor 四个学位选项，
 对应本科、硕士、专业硕士和博士的毕业论文，默认选项为`master`。
 文档内容的书写参考范例`example-singlefile.tex`。
 英语使用者可以启用`english`选项，模版会按照英语论文的格式排版。
 
 ### 文档编译
-编译文档请使用XeLaTeX引擎。
-模版提供latexmk设置文件用于自动编译。
+编译文档请使用 XeLaTeX 引擎。
+模版提供 latexmk 设置文件用于自动编译。
 将命令行工作目录切换到项目文件夹下，执行
 ```bash
 latexmk example-singlefile.tex
@@ -69,9 +69,9 @@ latexmk example-singlefile.tex
 执行`latexmk -c`命令清理所有缓存文件。
 
 编译多文件结构的文档将文件名替换成`example-multifile.tex`即可。
-使用TeXstudio、Texmaker或WinEdt等编辑环境请将编译引擎设置成latexmk，
-如果在Windows平台下使用MiKTeX还需要安装
-[Perl语言解释器](http://strawberryperl.com/)。
+使用 TeXstudio、Texmaker 或 WinEdt 等编辑环境请将编译引擎设置成 latexmk，
+如果在 Windows 平台下使用 MiKTeX 还需要安装
+[Perl 语言解释器](http://strawberryperl.com/)。
 
 手动编译的话执行
 ```bash
@@ -79,11 +79,11 @@ xelatex example-singlefile.tex
 ```
 命令即可，若文档内部有交叉引用或录入参考文献则需要编译两次。
 
-使用BibTeX录入参考文献需要先运行一次xelatex，运行一次bibtex，
-再运行两次xelatex。
-使用BibTeX录入攻读学位期间的研究成果的情况下
+使用 BibTeX 录入参考文献需要先运行一次 xelatex，运行一次 bibtex，
+再运行两次 xelatex。
+使用 BibTeX 录入攻读学位期间的研究成果的情况下
 还需要额外运行一次`bibtex accomplish.aux`。
-所以完整地编译包含两个BibTeX文献列表
+所以完整地编译包含两个 BibTeX 文献列表
 （一个是参考文献，一个是攻读学位期间的研究成果）的文档需要按顺序运行以下命令：
 
 ```bash
@@ -103,7 +103,7 @@ xelatex example-singlefile.tex
 这两页包括中文封面最后正式提交时会由文印中心统一提供，
 无论自己排版的封面是否符合格式要求。已经包含的封面也不会影响任何前期的审核。
 
-如果想使自定义的封面，可以用`\bindpdfcover`命令添加已经做好的PDF格式的封面，
+如果想使自定义的封面，可以用`\bindpdfcover`命令添加已经做好的 PDF 格式的封面，
 如`\bindpdfcover{cover.pdf}`。
 
 ### 中英文摘要
@@ -127,7 +127,7 @@ xelatex example-singlefile.tex
 
 ### 论文主体
 
-论文主体的写作参考一般的LaTeX教程
+论文主体的写作参考一般的 LaTeX 教程
 （如中文版的[lshort](https://www.ctan.org/pkg/lshort-zh-cn)），
 可以自由添加章节，章节内添加所需要的内容，分小节，插入公式、表格和图片。
 
@@ -143,7 +143,7 @@ xelatex example-singlefile.tex
 
 ### 参考文献
 
-使用BibTeX录入参考文献由`\thesisloadbibliography`命令导入`*.bib`文件数据库，
+使用 BibTeX 录入参考文献由`\thesisloadbibliography`命令导入`*.bib`文件数据库，
 参考文献风格自动设置为`thesis-swufe`。当参考文献数目超过100时，
 可以使用`large`选项调整编号的宽度，
 如`\thesisloadbibliography[large]{reference}`。
@@ -160,8 +160,8 @@ xelatex example-singlefile.tex
 模版的文献条目处理兼容 IEEE Xplore 和 ScienceDirect 的引用格式，
 还有其他主流的数据库。
 获得参考文献条目信息只需要在对应的文章页面点击下载引用的按钮
-（在 IEEE Xplore 中按钮在PDF下载旁边一个向下的箭头；在 ScienceDirect 中为文章标题上面的 Export 链接），
-选择BibTeX格式，将文本复制到 bib 文件即可。
+（在 IEEE Xplore 中按钮在 PDF 下载旁边一个向下的箭头；在 ScienceDirect 中为文章标题上面的 Export 链接），
+选择 BibTeX 格式，将文本复制到 bib 文件即可。
 
 当引用中文文献，而文献作者超过三位时，后面的作者想使用“等”字省略，
 可以在文章条目添加语言选项`language = {zh}`。
@@ -179,7 +179,7 @@ xelatex example-singlefile.tex
 
 ### 攻读学位期间取得的成果
 
-使用BibTeX录入研究成果由`\thesisloadaccomplish`命令导入`*.bib`文献列表，
+使用 BibTeX 录入研究成果由`\thesisloadaccomplish`命令导入`*.bib`文献列表，
 与参考文献的方法相同。
 文献列表风格自动设置为`thesis-swufe`。此命令没有可选参数，
 自动在文档中列出数据库中的所有条目。
@@ -212,7 +212,7 @@ xelatex example-singlefile.tex
 ### 算法描述
 
 算法描述使用`algorithm`环境，模板类自动加载`algorithm2e`宏包，
-详细的用法请参考[algorithm2e宏包文档](https://www.ctan.org/pkg/algorithm2e)。
+详细的用法请参考[algorithm2e 宏包文档](https://www.ctan.org/pkg/algorithm2e)。
 
 ### 枚举环境和脚注
 
@@ -279,7 +279,7 @@ latexmk example-multifile.tex
 使用`glossaries`宏包提供的`\gls`、`\Gls`（首字母大写）
 或`\glspl`（复数形式）等命令引用缩略词的`<label>`。
 具体使用方法参考
-[glossaries宏包文档]
+[glossaries 宏包文档]
 (https://www.ctan.org/tex-archive/macros/latex/contrib/glossaries/)。
 
 若想在缩略词表中列出所有定义过的条目，无论在正文中是否引用，
@@ -287,7 +287,7 @@ latexmk example-multifile.tex
 
 手动编译包含有缩略词表的文档，
 执行`xelatex`编译命令后需要执行`makeglossaries example-singlefile`
-（注意没有.tex后缀）创建缩略词索引，再执行`xelatex`命令完成编译。
+（注意没有 .tex 后缀）创建缩略词索引，再执行`xelatex`命令完成编译。
 所以手动编译一个包含参考文献、研究成果、缩略词表的完整文档命令为：
 ```bash
 xelatex example-singlefile.tex
@@ -297,4 +297,4 @@ makeglossaries example-singlefile
 xelatex example-singlefile.tex
 xelatex example-singlefile.tex
 ```
-推荐使用latexmk命令进行编译，自动处理以上的问题。
+推荐使用 latexmk 命令进行编译，自动处理以上的问题。
