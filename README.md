@@ -1,7 +1,8 @@
 # 西南财经大学毕业论文模板
 [![](https://img.shields.io/badge/license-LPPL-blue)](https://www.latex-project.org/lppl/)
-[![](https://img.shields.io/github/last-commit/ddpom/ThesisSWUFE)](https://github.com/ddpom/ThesisSWUFE/zipball/master)
-[![](https://img.shields.io/github/issues/ddpom/ThesisSWUFE)](https://github.com/ddpom/ThesisSWUFE/issues)
+[![](https://img.shields.io/github/last-commit/sierxue/ThesisSWUFE)](https://github.com/sierxue/ThesisSWUFE/zipball/master)
+[![](https://img.shields.io/github/issues/sierxue/ThesisSWUFE)](https://github.com/sierxue/ThesisSWUFE/issues)
+![Repo Size](https://img.shields.io/github/repo-size/sierxue/sierxue.svg)
 
 此项目提供用于排版西南财经大学毕业论文的LaTeX模板类，
 旨在帮助西南财经大学的毕业生高效地完成毕业论文的写作。
@@ -27,11 +28,11 @@
 
 ### 获取本模板方式
 #### Git 获取
-此项目托管于 github.com: https://github.com/ddpom/ThesisSWUFE.git
+此项目托管于 github.com: https://github.com/sierxue/ThesisSWUFE.git
 
 如果 github.com 速度慢的话，可以使用 [dev.tencent.com](https://dev.tencent.com) 上的镜像项目: https://git.dev.tencent.com/ganx/ThesisSWUFE.git
 #### 下载
-首选: [github 下载](https://github.com/ddpom/ThesisSWUFE/zipball/master).
+首选: [github 下载](https://github.com/sierxue/ThesisSWUFE/zipball/master).
 如果下载速度慢的话，可以用 [腾讯下载](https://dev.tencent.com/u/ganx/p/ThesisSWUFE/git/archive/master).
 ### 基本环境
 使用模板需要系统安装任意一种TeX环境，
