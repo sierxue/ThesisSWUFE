@@ -35,17 +35,16 @@
 首选: [github 下载](https://github.com/sierxue/ThesisSWUFE/zipball/master).
 如果下载速度慢的话，可以用 [腾讯下载](https://dev.tencent.com/u/ganx/p/ThesisSWUFE/git/archive/master).
 ### 基本环境
-使用模板需要系统安装任意一种 TeX 环境，
+1. 使用模板需要系统安装任意一种 TeX 环境，
 如[TeXLive](http://mirror.ctan.org/systems/texlive/Images/)、
 [MacTeX](https://www.tug.org/mactex/mactex-download.html)
 和[MiKTeX](https://miktex.org/download)
-（都自动带有 XeLaTeX 引擎，但是不推荐 CTeX），
-安装有 SimSun 和 SimHei 字体（其实就是宋体和黑体）以及 Times New Roman 英文字体。
-在 MacOS 下编译会自动识别操作系统，使用 Songti SC 和 STHeiti 字体，
-但需要启用`--shell-escape`编译选项。
-在 Linux  系统上，因为所需的字体文件已经放在目录 fonts/ 里了,
-即使不安装字体或者安装字体不成功的话，也可以使用。
-**注意**: 此功能只在 Ubuntu + texlive 2019 系统上测试过。
+（都自动带有 XeLaTeX 引擎，但是不推荐 CTeX）。
+1. 使用模板需要安装有宋体 SimSun, 黑体 SimHei, 华文中宋 STZhongsong, 以及
+Times New Roman 英文字体。
+如果系统没有安装这些字体，可以把这些字体的文件放置在项目的根目录。
+这些字体文件分别是: `simsun.ttc`, `simhei.ttf`, `STZHONGS.TTF`,
+`times.ttf`, `timesbd.ttf`, `timesbi.ttf`, `timesi.ttf`.
 
 模板采用 LaTeX 类的形式封装，
 导入模板只需要把 thesis-swufe.cls 文件放在文档所在目录，
