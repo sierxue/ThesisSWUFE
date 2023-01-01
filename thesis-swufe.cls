@@ -570,13 +570,13 @@
   \fontsize{16pt}{16pt}\selectfont
     \textbf{\MakeUppercase{\englishbooktitle}} \\[48bp]
   \ifbachelor{
-    \vspace{0.5cm}
-    \includegraphics[width=5cm]{logo.png} \\[66bp]
-  }{\includegraphics[width=221bp]{logo.png} \\[36bp]}
-  \begin{tabular}{lp{4.6in}}
-    \fontsize{16pt}{16pt}\selectfont 论文题目 & \multirow[t]{2}{4.6in}{
+    % \vspace{0.5cm}
+    \includegraphics[width=180bp]{logo.png} \\[40bp]
+  }{\includegraphics[width=180bp]{logo.png} \\[40bp]}
+  \begin{tabular}{lp{4.2in}}
+    \fontsize{18pt}{18pt}\selectfont 论文题目 & \multirow[t]{2}{4.2in}{
         \centering
-          \fontsize{16pt}{19pt}\selectfont
+          \fontsize{18pt}{18pt}\selectfont
           \thetitle
     } \\
     \cline{2-2}
